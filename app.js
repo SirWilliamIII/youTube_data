@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
             return data
         })
         .then(r => {
+            console.log(r.length)
             res.send(r)
         })
 })
